@@ -3,9 +3,9 @@
  * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
 
-CKEDITOR.dialog.add( 'about', function( editor ) {
+CKEDITOR.dialog.add( 'hellock', function( editor ) {
 	var lang = editor.lang.about,
-		imagePath = CKEDITOR.getUrl( CKEDITOR.plugins.get( 'about' ).path + 'dialogs/' + ( CKEDITOR.env.hidpi ? 'hidpi/' : '' ) + 'logo_ckeditor.png' );
+		imagePath = CKEDITOR.getUrl( CKEDITOR.plugins.get( 'hellock' ).path + 'dialogs/' + ( CKEDITOR.env.hidpi ? 'hidpi/' : '' ) + 'logo_ckeditor.png' );
 
 	return {
 		title: CKEDITOR.env.ie ? lang.dlgTitle : lang.title,
@@ -68,6 +68,6 @@ CKEDITOR.dialog.add( 'about', function( editor ) {
 				}
 			]
 		} ],
-		buttons: [ CKEDITOR.dialog.okButton,CKEDITOR.dialog.cancelButton ]
+		buttons: [CKEDITOR.dialog.cancelButton ]
 	};
 } );

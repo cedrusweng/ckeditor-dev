@@ -21,12 +21,13 @@ var initSample = ( function() {
 		var editorElement = CKEDITOR.document.getById( 'editor' );
 
 		// :(((
-		if ( isBBCodeBuiltIn ) {
+		/*if ( isBBCodeBuiltIn ) {
 			editorElement.setHtml(
 				'Hello world!\n\n' +
 				'I\'m an instance of [url=http://ckeditor.com]CKEditor[/url].'
 			);
-		}
+		}*/
+		console.log(wysiwygareaAvailable)
 
 		// Depending on the wysiwygare plugin availability initialize classic or inline editor.
 		if ( wysiwygareaAvailable ) {
